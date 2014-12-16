@@ -476,7 +476,8 @@ GameObject:
   - 114: {fileID: 127244166}
   - 114: {fileID: 127244165}
   - 95: {fileID: 127244164}
-  - 82: {fileID: 127244170}
+  - 82: {fileID: 127244171}
+  - 114: {fileID: 127244170}
   m_Layer: 9
   m_Name: thirdPersonCharacter
   m_TagString: Player
@@ -599,7 +600,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1996303825}
   m_GameObject: {fileID: 127244162}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!82 &127244170
+--- !u!114 &127244170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 127244162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a1462574f7644fbae85f28b27bd589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walk: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  run: {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
+  isWalking: 0
+  isRunning: 0
+--- !u!82 &127244171
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -608,7 +624,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -620,7 +636,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 1
+  BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -11882,19 +11898,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .703610897
+      value: .703610957
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .474239439
+      value: .474239469
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.524495959
+      value: -.524496019
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .0702324435
+      value: .070232451
       objectReference: {fileID: 0}
     - target: {fileID: 400170, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
       propertyPath: m_RootOrder
